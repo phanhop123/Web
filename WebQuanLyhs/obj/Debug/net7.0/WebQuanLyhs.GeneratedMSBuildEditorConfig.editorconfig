@@ -1,0 +1,135 @@
+is_global = true
+build_property.TargetFramework = net7.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = WebQuanLyhs
+build_property.RootNamespace = WebQuanLyhs
+build_property.ProjectDir = D:\ky 5\lap trinh nang cao\ManangementStudent\WebQuanLyhs\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 7.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = D:\ky 5\lap trinh nang cao\ManangementStudent\WebQuanLyhs
+build_property._RazorSourceGeneratorDebug = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/AddAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQWNjb3VudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/EditAcc.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEFjYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Coures/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmVzXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Coures/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmVzXERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Coures/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmVzXERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Coures/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmVzXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Coures/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ291cmVzXEluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/AddAccount.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRBY2NvdW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRDYXRlZ29yeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRDb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/AddStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRTdHVkZW50LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/CategoryIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxDYXRlZ29yeUluZGV4LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/ClassRoleIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxDbGFzc1JvbGVJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/CourseIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxDb3Vyc2VJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0Q291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditStudent.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0U3R1ZGVudC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditTeacher.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0VGVhY2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/StudentClassIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxTdHVkZW50Q2xhc3NJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/StudentIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxTdHVkZW50SW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/TeacherIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxUZWFjaGVySW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/User/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-gm9ej5ikzc
