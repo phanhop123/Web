@@ -13,11 +13,8 @@ builder.Services.AddDbContext<ConnectDB>(options => { options.UseSqlServer(build
 
 builder.Services.AddDistributedMemoryCache();
 builder.Services.AddAutoMapper(typeof(AutoMapperProfile));
-builder.Services.AddAuthentication(CookieAuthenticationDefaults.AuthenticationScheme).AddCookie(options =>
-{
-	options.LoginPath = "/User/Login";
-	options.AccessDeniedPath = "/AccessDenied";
-});
+builder.Services.AddSession();
+
 
 builder.Services.AddSession(options =>
 {

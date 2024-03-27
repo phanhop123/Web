@@ -9,7 +9,6 @@ namespace BusinessObject.Data
 		[Key]
 		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 		public int Coures_id { get; set; }
-
 		public string? Coures_name { get; set; }
 
 		[ForeignKey(nameof(Category_Course))]

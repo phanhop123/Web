@@ -82,6 +82,14 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRTdHVkZW50LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/AddStudentClass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRTdHVkZW50Q2xhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/AddTeacherClass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRUZWFjaGVyQ2xhc3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/CategoryIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxDYXRlZ29yeUluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -102,8 +110,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0U3R1ZGVudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditStudentClass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0U3R1ZGVudENsYXNzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditTeacher.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0VGVhY2hlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditTeacherClass.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0VGVhY2hlckNsYXNzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/StudentClassIndex.cshtml]
@@ -114,8 +130,36 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxTdHVkZW50SW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/TeacherClassIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxUZWFjaGVyQ2xhc3NJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/TeacherIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxUZWFjaGVySW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Student/Detailcourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxEZXRhaWxjb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Student/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3R1ZGVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Teacher/Detailcourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxEZXRhaWxjb3Vyc2UuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Teacher/Exercise.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxFeGVyY2lzZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Teacher/ExerciseAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxFeGVyY2lzZUFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Teacher/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVGVhY2hlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/User/Login.cshtml]

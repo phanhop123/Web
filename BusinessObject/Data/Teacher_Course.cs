@@ -16,8 +16,8 @@ namespace BusinessObject.Data
         public string Teaching_major {  get; set; }
         public string Fullname { get; set; }
         [ForeignKey(nameof(Course))]
-        public int Course_id { get; set; }
-        public virtual Course Course { get; set; }
+        public int Course_id { get; set; } 
+        public virtual Course Course { get; set; } = null!;
         public virtual ICollection<Teacher_Class> Teacher_Class { get; set; } = new List<Teacher_Class>();
         public User User { get; set; }
     }

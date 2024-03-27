@@ -35,7 +35,7 @@ namespace WebQuanLyhs.Controllers
         public ActionResult AddAccount()
         {
             var course = db.Courses.ToList();
-            ViewBag.KhoaHocSVList = new SelectList(course,"Coures_id", "Coures_name");
+            ViewBag.KhoaHocSVList = new SelectList(course, "Coures_id", "Coures_name");
 
 
             return View();
@@ -60,7 +60,7 @@ namespace WebQuanLyhs.Controllers
                 db.SaveChanges();
                 var users = db.Users.FirstOrDefault(u => u.Email == user.Email);
                 var course = db.Courses.FirstOrDefault(u => u.Coures_id == user.Coures_id);
-                
+
                 var newDetail = new Teacher_Course
                 {
                     Teacher_Coures_id = users.User_id,
@@ -82,7 +82,7 @@ namespace WebQuanLyhs.Controllers
         }
         public IActionResult EditTeacher(int id)
         {
-           
+
             var item = db.Users.Find(id);
             return View(item);
         }
@@ -129,7 +129,7 @@ namespace WebQuanLyhs.Controllers
         }
         [HttpPost]
         public IActionResult AddStudent(CStudent user)
-        { 
+        {
             // Kiểm tra xem có User nào có user_id bằng 4 không
 
 
@@ -146,18 +146,18 @@ namespace WebQuanLyhs.Controllers
                     // Gán các thuộc tính của User tương ứng từ model
                 };
 
-        db.Users.Add(newUser);
+                db.Users.Add(newUser);
                 db.SaveChanges();
                 var users = db.Users.FirstOrDefault(u => u.Email == user.Email);
-        var newDetail = new Student_Course
-        {
-            Student_id = users.User_id,
-            Major = user.Major,
+                var newDetail = new Student_Course
+                {
+                    Student_id = users.User_id,
+                    Major = user.Major,
 
-            // Gán các thuộc tính của UserDetail tương ứng từ model
-        };
+                    // Gán các thuộc tính của UserDetail tương ứng từ model
+                };
 
-        db.Student_Courses.Add(newDetail);
+                db.Student_Courses.Add(newDetail);
 
                 db.SaveChanges();
 
@@ -360,7 +360,7 @@ namespace WebQuanLyhs.Controllers
         }
 
         #endregion
-        #region xeplop
+        #region StudentClass
         public IActionResult StudentClassIndex()
         {
 
@@ -371,23 +371,92 @@ namespace WebQuanLyhs.Controllers
         }
         public ActionResult AddStudentClass()
         {
+            var sv = db.Class_Roles.ToList();
+            ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
+            var st = db.Student_Courses.ToList();
+            ViewBag.Student_Course_id = new SelectList(st, "Student_id", "Fullname");
             return View();
         }
         [HttpPost]
-        public IActionResult AddStudentClass(Class_Role model)
+        public IActionResult AddStudentClass(Student_Class model)
         {
             if (model != null)
             {
-                db.Class_Roles.Add(model);
+                db.Student_Classes.Add(model);
                 db.SaveChanges();
-                return RedirectToAction("ClassRoleIndex");
+                return RedirectToAction("StudentClassIndex");
             }
             return View();
 
         }
+        public IActionResult EditStudentClass(int id)
+        {
+            var sv = db.Class_Roles.ToList();
+            ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
+            var st = db.Student_Courses.ToList();
+            ViewBag.Student_Course_id = new SelectList(st, "Student_id", "Fullname");
+            var item = db.Student_Classes.Find(id);
+            return View(item);
+        }
+        [HttpPost]
+        public IActionResult EditStudentClass(Student_Course model)
+        {
+            db.Student_Courses.Attach(model);
+            db.Update(model);
+
+            db.SaveChanges();
+            return RedirectToAction("StudentClassIndex");
+        }
         #endregion
+        #region TeacherClass
 
+        public IActionResult TeacherClassIndex()
+        {
 
+            var sv = db.Teacher_Courses.ToList();
+            var phanLoaiSVList = db.Class_Roles.ToList();
+            var teacherclass = db.Teacher_Classes;
+            return View(teacherclass);
+        }
+        public ActionResult AddTeacherClass()
+        {
+            var sv = db.Class_Roles.ToList();
+            ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
+            var st = db.Teacher_Courses.ToList();
+            ViewBag.Teacher_Coures_id = new SelectList(st, "Teacher_Coures_id", "Fullname");
+            return View();
+        }
+        [HttpPost]
+        public IActionResult AddTeacherClass(Teacher_Class model)
+        {
+            if (model != null)
+            {
+                db.Teacher_Classes.Add(model);
+                db.SaveChanges();
+                return RedirectToAction("TeacherClassIndex");
+            }
+            return View();
+
+        }
+        public IActionResult EditTeacherClass(int id)
+        {
+            var sv = db.Class_Roles.ToList();
+            ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
+            var st = db.Teacher_Courses.ToList();
+            ViewBag.Teacher_Course_id = new SelectList(st, "Teacher_Coures_id", "Fullname");
+            var item = db.Teacher_Classes.Find(id);
+            return View(item);
+        }
+        [HttpPost]
+        public IActionResult EditTeacherClass(Teacher_Class model)
+        {
+            db.Teacher_Classes.Attach(model);
+            db.Update(model);
+
+            db.SaveChanges();
+            return RedirectToAction("TeacherClassIndex");
+        }
+        #endregion
 
     }
 }

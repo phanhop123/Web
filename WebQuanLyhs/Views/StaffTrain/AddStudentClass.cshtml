@@ -1,0 +1,33 @@
+﻿@model BusinessObject.Data.Student_Class
+
+@{
+    ViewData["Title"] = "AddStudentClass";
+}
+
+<h1>AddStudentClass</h1>
+
+<h4>Student_Class</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddStudentClass">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Class_Role" class="control-label"></label>
+                <select asp-for="Class_Role_id" class="form-control" asp-items="ViewBag.KhoaHocSVList"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Student_Course" class="control-label"></label>
+                <select asp-for="Student_Course_id" class ="form-control" asp-items="ViewBag.Student_Course_id"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

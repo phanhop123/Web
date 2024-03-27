@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using OfficeOpenXml;
 using BusinessObject.Viewmodel;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 
 namespace WebQuanLyhs.Controllers
 {
@@ -54,33 +55,26 @@ namespace WebQuanLyhs.Controllers
 				}
 				else
 				{
-					var claims = new List<Claim> {
-								new Claim(ClaimTypes.Email, user.Email),
-								new Claim(ClaimTypes.Name, user.Fullname),                                                                              
-								//claim - role động
-								new Claim(ClaimTypes.Role, user.Role_id == 1 ?"Admin" : user.Role_id == 2 ?"Get training staff" :  user.Role_id == 3 ?"Teacher" : user.Role_id == 4 ?"Student" :"Admin" )
-							};
-
-					var claimsIdentity = new ClaimsIdentity(claims, CookieAuthenticationDefaults.AuthenticationScheme);
-					var claimsPrincipal = new ClaimsPrincipal(claimsIdentity);
-
-                    await HttpContext.SignInAsync(claimsPrincipal);
-
+                    HttpContext.Session.SetString("Email", user.Email);
+                    HttpContext.Session.SetString("Name", user.Fullname);
+                    HttpContext.Session.SetInt32("ID", user.User_id);
+                    HttpContext.Session.SetInt32("Role", user.Role_id);
+              
                     if (user.Role_id == 1 )
                     {
-                        return RedirectToAction("AdminPage", "Home");
+                        return RedirectToAction("Index", "Admin");
                     }
                     else if (user.Role_id == 2)
                     {
-                        return RedirectToAction("TrainingStaffPage", "Home");
+                        return RedirectToAction("TeacherIndex", "StaffTrain");
                     }
                     else if (user.Role_id == 3)
                     {
-                        return RedirectToAction("TeacherPage", "Home");
+                        return RedirectToAction("index", "Teacher");
                     }
                     else if (user.Role_id == 4)
                     {
-                        return RedirectToAction("StudentPage", "Home");
+                        return RedirectToAction("index", "Student");
                     }
                     if (Url.IsLocalUrl(ReturnUrl))
 					{
