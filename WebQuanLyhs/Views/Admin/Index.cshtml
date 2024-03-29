@@ -19,6 +19,9 @@
                 @Html.DisplayNameFor(model => model.Password)
             </th>
             <th>
+                @Html.DisplayNameFor(model => model.Fullname)
+            </th>
+            <th>
                 @Html.DisplayNameFor(model => model.Role)
             </th>
             <th></th>
@@ -33,6 +36,9 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Password)
             </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Fullname)
+                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Role.Role_name)
                 </td>

@@ -25,9 +25,14 @@
             </div>
 
             <div class="form-group">
+            <label asp-for="Fullname" class="control-label"></label>
+            <input asp-for="Fullname" class="form-control" />
+            <span asp-validation-for="Fullname" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Role" class="control-label"></label>
                 <div class="col-md-10">
-                    @Html.DropDownListFor(model => model.Role_id, ViewBag.PhanLoaiSVList as SelectList, "-- Chọn phân loại sinh viên --", new { @class = "form-control" })
+                    @Html.DropDownListFor(model => model.Role_id, ViewBag.PhanLoaiSVList as SelectList, "-- Select student classification --", new { @class = "form-control" })
                     @Html.ValidationMessageFor(model => model.Role_id, "", new { @class = "text-danger" })
                 </div>
             </div>

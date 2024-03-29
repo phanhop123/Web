@@ -11,11 +11,15 @@ namespace BusinessObject.Viewmodel
     {
         [Required(ErrorMessage = "*")]
         [MaxLength(20)]
+        [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Error @")]
+
         public string Email { get; set; }
 
         [Required(ErrorMessage = "*")]
         [DataType(DataType.Password)]
         public string Password { get; set; }
+        public string Fullname { get; set; }
+
         public int Role_id { get; set; }
 
 

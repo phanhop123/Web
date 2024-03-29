@@ -9,6 +9,7 @@ using Microsoft.EntityFrameworkCore.Metadata.Internal;
 using System.Security.Claims;
 using static Microsoft.EntityFrameworkCore.DbLoggerCategory;
 using WebQuanLyhs.Helps;
+using WebQuanLyhs.DTO;
 
 namespace WebQuanLyhs.Controllers
 {
@@ -78,7 +79,7 @@ namespace WebQuanLyhs.Controllers
                                                      {
                                                          Exercise_id = b.Exercise_id,
                                                          File_name = b.File_name,
-
+                                                         Link_submit_assignments = b.Link_submit_assignments,
                                                      }).ToList(),
 
                                     }
@@ -92,6 +93,14 @@ namespace WebQuanLyhs.Controllers
             }
             return View(user); 
         }
+        public ActionResult AddBt( )
+        {
+            return View();
+        }
+
+      
+            
+        
 
 
     }

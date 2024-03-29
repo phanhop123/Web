@@ -364,9 +364,10 @@ namespace WebQuanLyhs.Controllers
         public IActionResult StudentClassIndex()
         {
 
-            var sv = db.Student_Courses.ToList();
-            var phanLoaiSVList = db.Class_Roles.ToList();
-            var studentclass = db.Student_Classes;
+           
+            var studentclass = db.Student_Classes.
+                Include(sc => sc.Class_Role).
+                Include(sc => sc.Student_Course);
             return View(studentclass);
         }
         public ActionResult AddStudentClass()
@@ -413,9 +414,10 @@ namespace WebQuanLyhs.Controllers
         public IActionResult TeacherClassIndex()
         {
 
-            var sv = db.Teacher_Courses.ToList();
-            var phanLoaiSVList = db.Class_Roles.ToList();
-            var teacherclass = db.Teacher_Classes;
+            
+            var teacherclass = db.Teacher_Classes.
+                Include(sc => sc.Class_Role).
+                Include(sc => sc.Teacher_Course);
             return View(teacherclass);
         }
         public ActionResult AddTeacherClass()

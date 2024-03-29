@@ -23,9 +23,14 @@
             <ul>
                 @foreach (var exercise in Model.Teacher_Class.Teacher_Course.Course.Exercises)
                 {
-                    <li>@exercise.File_name</li>
-                    <a href="~/Hinh/Exercise/@exercise.File_name" class="btn btn-primary" download>Tải File</a>
-                    <li>@exercise.Link_submit_assignments</li>
+                    <li>
+                        @exercise.File_name
+                        @if (!string.IsNullOrEmpty(exercise.File_name))
+                        {
+                            <a href="~/Hinh/Exercise/@exercise.File_name" class="btn btn-primary" download>Tải File</a>
+                        }
+                    </li>
+                    <li><a asp-action="AddBt" asp-route-id="@exercise.Exercise_id">@exercise.Link_submit_assignments</a>  </li>
 
                    
                 }
