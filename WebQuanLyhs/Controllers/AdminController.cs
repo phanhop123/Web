@@ -19,11 +19,6 @@ namespace WebQuanLyhs.Controllers
             db = context;
             _mapper = mapper;
         }
-
-        
-       
-
-
         public IActionResult Index()
         {
             var usersWithRoles = db.Users.Include(u => u.Role).ToList();
@@ -31,6 +26,7 @@ namespace WebQuanLyhs.Controllers
             
             return View(admin);
         }
+
         public ActionResult AddAccount()
         {
             var phanLoaiSVList = db.Roles.ToList();
@@ -38,6 +34,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddAccount(UserLogin model)
         {
             if (ModelState.IsValid)
@@ -59,6 +57,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult EditAcc(User model)
         {
            
@@ -82,5 +82,127 @@ namespace WebQuanLyhs.Controllers
             }
             return Json(new { success = false });
         }
-    }
+
+		#region Category_Course
+		public IActionResult CategoryIndex()
+		{
+			var category = db.Category_Courses.ToList();
+			return View(category);
+		}
+		public ActionResult AddCategory()
+		{
+
+			return View();
+		}
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+
+		public IActionResult AddCategory(Category_Course model)
+		{
+			if (ModelState.IsValid)
+			{
+				db.Category_Courses.Add(model);
+				db.SaveChanges();
+				return RedirectToAction("CategoryIndex");
+			}
+			return View();
+
+		}
+		public IActionResult EditCategory(int id)
+		{
+			var item = db.Category_Courses.Find(id);
+			return View(item);
+		}
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+
+		public IActionResult EditCategory(Category_Course model)
+		{
+			db.Category_Courses.Attach(model);
+			db.Update(model);
+
+			db.SaveChanges();
+			return RedirectToAction("CategoryIndex");
+		}
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+
+		public ActionResult DeleteCategory(int id)
+		{
+			var item = db.Category_Courses.Find(id);
+			if (item != null)
+			{
+				/*var DeleteItem=db.Categories.Attach(item);*/
+				db.Category_Courses.Remove(item);
+				db.SaveChanges();
+				return Json(new { success = true });
+			}
+			return Json(new { success = false });
+		}
+		#endregion
+		#region Course
+
+		public IActionResult CourseIndex()
+		{
+			var usersWithRoles = db.Courses.Include(u => u.Category_Course).ToList();
+			var course = db.Courses.ToList();
+			return View(course);
+		}
+		public ActionResult AddCourse()
+		{
+
+			var phanLoaiSVList = db.Category_Courses.ToList();
+			ViewBag.KhoaHocSVList = new SelectList(phanLoaiSVList, "Category_coures_id", "Category_name");
+			return View();
+		}
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+
+		public IActionResult AddCourse(Course model)
+		{
+			if (model != null)
+			{
+				db.Courses.Add(model);
+				db.SaveChanges();
+				return RedirectToAction("CourseIndex");
+			}
+			return View();
+
+		}
+		public IActionResult EditCourse(int id)
+		{
+			var phanLoaiSVList = db.Category_Courses.ToList();
+			ViewBag.KhoaHocSVList = new SelectList(phanLoaiSVList, "Category_coures_id", "Category_name");
+			var item = db.Courses.Find(id);
+			return View(item);
+		}
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+
+		public IActionResult EditCourse(Course model)
+		{
+			db.Courses.Attach(model);
+			db.Update(model);
+
+			db.SaveChanges();
+			return RedirectToAction("CourseIndex");
+		}
+		[HttpPost]
+		[ValidateAntiForgeryToken]
+
+		public ActionResult DeleteCourse(int id)
+		{
+			var item = db.Courses.Find(id);
+			if (item != null)
+			{
+				/*var DeleteItem=db.Categories.Attach(item);*/
+				db.Courses.Remove(item);
+				db.SaveChanges();
+				return Json(new { success = true });
+			}
+			return Json(new { success = false });
+		}
+
+		#endregion
+	}
 }

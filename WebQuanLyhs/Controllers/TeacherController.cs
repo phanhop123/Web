@@ -100,7 +100,44 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
         public IActionResult ExerciseAdd(AddExercise model)
+        {
+            if (model.File != null)
+            {
+                var exsercise = new Exercise()
+                {
+                    Exercise_name = model.Exercise_name,
+                    Creat_time = DateTime.Now,
+                    File_name = Myunti.UploadHinh(model.File, "Exercise"),
+                    Link_submit_assignments = model.Link_submit_assignments,
+                    Course_id = model.Course_id
+                };
+                db.Exercises.Add(exsercise);
+                db.SaveChanges();
+                return RedirectToAction("Exercise");
+            }
+            else { return View(model); }
+        }
+        public ActionResult ExerciseEdit()
+        {
+            int? id = HttpContext.Session.GetInt32("ID");
+            if (id == 0)
+            {
+                throw new Exception("");
+            }
+            // Lọc danh sách khóa học theo giáo viên.
+            var courses = db.Teacher_Courses
+               .Where(sc => sc.Teacher_Coures_id == id)
+               .Select(sc => sc.Course)
+               .ToList();
+
+
+            ViewBag.KhoaHocSVList = new SelectList(courses, "Coures_id", "Coures_name");
+            return View();
+        }
+        [HttpPost]
+        public IActionResult ExerciseEdit(AddExercise model)
         {
             if (model.File != null)
             {

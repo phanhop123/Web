@@ -25,6 +25,7 @@ namespace WebQuanLyhs.Controllers
 
         }
         #region Teacher
+
         public IActionResult TeacherIndex()
         {
             var usersWithRoles = db.Users.Include(u => u.Role).ToList();
@@ -41,6 +42,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddAccount(CStudent user)
         {
             if (ModelState.IsValid)
@@ -66,7 +69,7 @@ namespace WebQuanLyhs.Controllers
                     Teacher_Coures_id = users.User_id,
                     Teaching_major = user.Major,
                     Fullname = user.Fullname,
-                    Course_id = course.Coures_id
+                    Course_id = course.Coures_id 
 
                     // Gán các thuộc tính của UserDetail tương ứng từ model
                 };
@@ -87,6 +90,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult EditTeacher(User model)
         {
             db.Users.Attach(model);
@@ -96,6 +101,8 @@ namespace WebQuanLyhs.Controllers
             return RedirectToAction("TeacherIndex");
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public ActionResult DeleteTeacher(int id)
         {
             var item = db.Users.Find(id);
@@ -128,6 +135,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddStudent(CStudent user)
         {
             // Kiểm tra xem có User nào có user_id bằng 4 không
@@ -174,6 +183,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult EditStudent(User model)
         {
             db.Users.Attach(model);
@@ -183,6 +194,8 @@ namespace WebQuanLyhs.Controllers
             return RedirectToAction("StudentIndex");
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public ActionResult DeleteStudent(int id)
         {
             var item = db.Users.Find(id);
@@ -209,6 +222,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddCategory(Category_Course model)
         {
             if (ModelState.IsValid)
@@ -226,6 +241,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult EditCategory(Category_Course model)
         {
             db.Category_Courses.Attach(model);
@@ -235,6 +252,8 @@ namespace WebQuanLyhs.Controllers
             return RedirectToAction("CategoryIndex");
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public ActionResult DeleteCategory(int id)
         {
             var item = db.Category_Courses.Find(id);
@@ -264,6 +283,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddCourse(Course model)
         {
             if (model != null)
@@ -283,6 +304,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult EditCourse(Course model)
         {
             db.Courses.Attach(model);
@@ -292,6 +315,8 @@ namespace WebQuanLyhs.Controllers
             return RedirectToAction("CourseIndex");
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public ActionResult DeleteCourse(int id)
         {
             var item = db.Courses.Find(id);
@@ -319,6 +344,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddClassRole(Class_Role model)
         {
             if (model != null)
@@ -337,6 +364,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult EditClassRole(Class_Role model)
         {
             db.Class_Roles.Attach(model);
@@ -346,6 +375,8 @@ namespace WebQuanLyhs.Controllers
             return RedirectToAction("ClassRoleIndex");
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public ActionResult DeleteClassRole(int id)
         {
             var item = db.Class_Roles.Find(id);
@@ -379,6 +410,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddStudentClass(Student_Class model)
         {
             if (model != null)
@@ -400,6 +433,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult EditStudentClass(Student_Course model)
         {
             db.Student_Courses.Attach(model);
@@ -429,6 +464,8 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
+        [ValidateAntiForgeryToken]
+
         public IActionResult AddTeacherClass(Teacher_Class model)
         {
             if (model != null)
@@ -450,6 +487,8 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
+                [ValidateAntiForgeryToken]
+
         public IActionResult EditTeacherClass(Teacher_Class model)
         {
             db.Teacher_Classes.Attach(model);

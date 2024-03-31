@@ -44,7 +44,7 @@ namespace WebQuanLyhs.Controllers
             }
             catch (Exception ex)
             {
-               
+
                 return BadRequest($"Error occurred: {ex.Message}");
             }
 
@@ -80,27 +80,62 @@ namespace WebQuanLyhs.Controllers
                                                          Exercise_id = b.Exercise_id,
                                                          File_name = b.File_name,
                                                          Link_submit_assignments = b.Link_submit_assignments,
+
                                                      }).ToList(),
 
                                     }
                                 }
                             }
-                        }).FirstOrDefault(); 
+                        }).FirstOrDefault();
             }
             catch (Exception ex)
             {
-               
+
             }
-            return View(user); 
+            return View(user);
         }
-        public ActionResult AddBt( )
+        [HttpGet]
+        public IActionResult AddBt( )
         {
+
             return View();
         }
+        [HttpPost]
+        public IActionResult AddBt(Exercise model, IFormFile file)
+        {
+            try
+            {
+                var exercise = db.Exercises.FirstOrDefault(e => e.Exercise_id == model.Exercise_id);
+                if (exercise != null)
+                {
+                    exercise.Link_submit_assignments = Myunti.UploadHinh(file, "Filenopbt");
+                    exercise.Creat_time = DateTime.Now;
 
-      
-            
-        
+                    db.Exercises.Update(exercise);
+                    db.SaveChanges();
+
+                    return RedirectToAction("Detailcourse");
+                }
+                else
+                {
+                    // Xử lý trường hợp không tìm thấy bản ghi để cập nhật
+                    // Ví dụ: Trả về một trang thông báo lỗi
+                    return View("NotFound");
+                }
+            }
+            catch (Exception ex)
+            {
+                // Xử lý ngoại lệ
+                // Ví dụ: Trả về một trang thông báo lỗi
+                return View("Error");
+            }
+        }
+
+
+
+
+
+
 
 
     }

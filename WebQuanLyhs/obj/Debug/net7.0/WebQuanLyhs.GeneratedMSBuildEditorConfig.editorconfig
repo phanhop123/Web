@@ -22,8 +22,32 @@ build_property._RazorSourceGeneratorDebug =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/AddCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/AddCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRkQ291cnNlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/CategoryIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ2F0ZWdvcnlJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/CourseIndex.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ291cnNlSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/EditAcc.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdEFjYy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENhdGVnb3J5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/EditCourse.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdENvdXJzZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/Admin/Index.cshtml]
@@ -100,6 +124,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/CourseIndex.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxDb3Vyc2VJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditCategory.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/ky 5/lap trinh nang cao/ManangementStudent/WebQuanLyhs/Views/StaffTrain/EditCourse.cshtml]
