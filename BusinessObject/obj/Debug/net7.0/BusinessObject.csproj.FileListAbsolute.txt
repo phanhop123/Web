@@ -27,3 +27,4 @@ C:\Users\Admin\Downloads\Web-main\Web-main\BusinessObject\obj\Debug\net7.0\refin
 C:\Users\Admin\Downloads\Web-main\Web-main\BusinessObject\obj\Debug\net7.0\BusinessObject.pdb
 C:\Users\Admin\Downloads\Web-main\Web-main\BusinessObject\obj\Debug\net7.0\BusinessObject.genruntimeconfig.cache
 C:\Users\Admin\Downloads\Web-main\Web-main\BusinessObject\obj\Debug\net7.0\ref\BusinessObject.dll
+C:\Users\Admin\Downloads\Web-main\Web-main\BusinessObject\obj\Debug\net7.0\BusinessObject.sourcelink.json

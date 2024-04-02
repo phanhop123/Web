@@ -85,9 +85,15 @@
                 <ul class="menu-inner py-1">
 
                     <li class="menu-item">
-                        <a asp-action="Index" class="menu-link">
+                        <a asp-action="TeacherIndex" class="menu-link">
                             <i class="menu-icon tf-icons bx bxs-user-account"></i>
-                            <div data-i18n="user">Account management</div>
+                            <div data-i18n="teacher">Teacher management</div>
+                        </a>
+                    </li>
+                    <li class="menu-item">
+                        <a asp-action="StudentIndex" class="menu-link">
+                            <i class="menu-icon tf-icons bx bxs-user-account"></i>
+                            <div data-i18n="student">Student management</div>
                         </a>
                     </li>
                     <li class="menu-item">
@@ -198,8 +204,10 @@
         document.addEventListener("DOMContentLoaded", function () {
             var url = window.location.href;
             var conditions = [
-                { keyword: "EditAcc", dataI18n: "user" },
-                { keyword: "AddAccount", dataI18n: "user" },
+                { keyword: "EditTeacher", dataI18n: "teacher" },
+                { keyword: "AddAccount", dataI18n: "teacher" },
+                { keyword: "AddStudent", dataI18n: "student" },
+                { keyword: "EditStudent", dataI18n: "student" },
                 { keyword: "AddCategory", dataI18n: "category" },
                 { keyword: "EditCategory", dataI18n: "category" },
                 { keyword: "EditCourse", dataI18n: "course" },

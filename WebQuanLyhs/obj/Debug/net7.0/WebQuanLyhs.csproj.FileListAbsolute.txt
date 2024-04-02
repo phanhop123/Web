@@ -543,3 +543,4 @@ C:\Users\Admin\Downloads\Web-main\Web-main\WebQuanLyhs\obj\Debug\net7.0\refint\W
 C:\Users\Admin\Downloads\Web-main\Web-main\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.pdb
 C:\Users\Admin\Downloads\Web-main\Web-main\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.genruntimeconfig.cache
 C:\Users\Admin\Downloads\Web-main\Web-main\WebQuanLyhs\obj\Debug\net7.0\ref\WebQuanLyhs.dll
+C:\Users\Admin\Downloads\Web-main\Web-main\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.sourcelink.json

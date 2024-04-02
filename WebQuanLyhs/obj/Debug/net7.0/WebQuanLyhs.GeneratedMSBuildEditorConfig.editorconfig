@@ -102,6 +102,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRDYXRlZ29yeS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Users/Admin/Downloads/Web-main/Web-main/WebQuanLyhs/Views/StaffTrain/AddClassRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRDbGFzc1JvbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Admin/Downloads/Web-main/Web-main/WebQuanLyhs/Views/StaffTrain/AddCourse.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxBZGRDb3Vyc2UuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -132,6 +136,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Admin/Downloads/Web-main/Web-main/WebQuanLyhs/Views/StaffTrain/EditCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0Q2F0ZWdvcnkuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Admin/Downloads/Web-main/Web-main/WebQuanLyhs/Views/StaffTrain/EditClassRole.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZUcmFpblxFZGl0Q2xhc3NSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Admin/Downloads/Web-main/Web-main/WebQuanLyhs/Views/StaffTrain/EditCourse.cshtml]

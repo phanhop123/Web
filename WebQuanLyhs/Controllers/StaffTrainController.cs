@@ -94,7 +94,7 @@ namespace WebQuanLyhs.Controllers
 
         public IActionResult EditTeacher(User model)
         {
-            db.Users.Attach(model);
+            db.Users.Update(model);
             db.Update(model);
 
             db.SaveChanges();

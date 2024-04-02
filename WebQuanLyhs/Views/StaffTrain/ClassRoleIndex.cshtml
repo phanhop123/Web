@@ -11,7 +11,7 @@
 <h1>ClassRoleIndex</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="AddClassRole">Create New</a>
 </p>
 <table class="table">
     <thead>
@@ -29,9 +29,8 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.Class_Role_id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Class_Role_id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Class_Role_id">Delete</a>
+                <a asp-action="EditClassRole" asp-route-id="@item.Class_Role_id">Edit</a> |
+                <a  asp-action="Delete" asp-route-id="@item.Class_Role_id">Delete</a>
             </td>
         </tr>
 }
