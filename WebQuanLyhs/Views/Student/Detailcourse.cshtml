@@ -1,0 +1,46 @@
+﻿@model BusinessObject.Viewmodel.DetailCourse
+
+@{
+    ViewData["Title"] = "Detailcourse";
+}
+
+<h1>Detailcourse</h1>
+
+<div>
+    <h4>Course</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Teacher_Class.Teacher_Course.Course.Coures_name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Teacher_Class.Teacher_Course.Course.Coures_name)
+        </dd>
+        <dt class="col-sm-2">
+            Bài tập
+        </dt>
+        <dd class="col-sm-10">
+            <ul>
+                @foreach (var exercise in Model.Teacher_Class.Teacher_Course.Course.Exercises)
+                {
+                    <li>
+                        @exercise.File_name
+                        @if (!string.IsNullOrEmpty(exercise.File_name))
+                        {
+                            <a href="~/Hinh/Exercise/@exercise.File_name" class="btn btn-primary" download>Tải File</a>
+                        }
+                    </li>
+                    <li><a asp-action="AddBt" asp-route-id="@exercise.Exercise_id">@exercise.Link_submit_assignments</a>  </li>
+
+                   
+                }
+            </ul>
+        </dd>
+        
+        
+    </dl>
+
+</div>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>

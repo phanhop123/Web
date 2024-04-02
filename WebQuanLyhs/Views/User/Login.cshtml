@@ -1,0 +1,60 @@
+﻿@model BusinessObject.Viewmodel.UserLogin
+
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/js/bootstrap.min.js">
+	<link rel="stylesheet" href="~/css/Login.css">
+	
+</head>
+<div class="container-fluid">
+	<div class="row">
+		<div style="display: flex;" class="col-md-6 Login">
+			<!-- Phần form đăng nhập -->
+			<div class="login-form">
+				<h1 class="header-area" style="font-weight: 650; margin-bottom:20px">Log in to your account</h1>
+				<p class="lead" style="margin:15px;color: rgba(127, 127, 127, 0.807);">Welcome! Select method to login:</p>
+				<form asp-action="Login" asp-route-returnurl="@ViewBag.ReturnUrl">
+					<div class="text-danger" asp-validation-summary="All"></div>
+					<div class="mb-3">
+						<div class="form-item w-100">
+							<label asp-for="@Model.Email" class="form-label ">User:</label>
+							<input asp-for="@Model.Email" class="form-control username" type="text" placeholder="Enter your email or username" required>
+							<span asp-validation-for="@Model.Email" class="text-danger"></span>
+						</div>
+					</div>
+					<div class="mb-3">
+						<div class="form-item w-100">
+							<label asp-for="@Model.Password" class="form-label">Password:</label>
+							<input asp-for="@Model.Password" class="form-control password" type="password" placeholder="Enter your password" required>
+							<span asp-validation-for="@Model.Password" class="text-danger"></span>
+						</div>
+					</div>
+
+					<div class="row mb-3">
+						<button type="submit" class="btn-login">Login</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div style="text-align:center" class="background-left Login">
+			<!-- Phần background màu cam -->
+			<h2  style="padding-bottom:30px" class="background-content">Academic Portal </h2>
+			<div class="circle">
+				<img class="logoimg img-thumbnai" src="~/Hinh/Logo/logo-removebg-preview.png" alt="ảnh logo">
+			</div>
+		</div>
+	</div>
+</div>
+</html>
+
+
+

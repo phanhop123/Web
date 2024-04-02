@@ -1,0 +1,45 @@
+﻿@model IEnumerable<BusinessObject.Data.Teacher_Class>
+
+@{
+    ViewData["Title"] = "TeacherClassIndex";
+}
+@{
+    Layout = "_LayoutStaff";
+}
+
+
+<h1>TeacherClassIndex</h1>
+
+<p>
+    <a asp-action="AddTeacherClass">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Class_Role)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Teacher_Course)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Class_Role.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Teacher_Course.Fullname)
+            </td>
+            <td>
+                <a asp-action="Edit" asp-route-id="@item.Study_Class_id">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.Study_Class_id">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.Study_Class_id">Delete</a>
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

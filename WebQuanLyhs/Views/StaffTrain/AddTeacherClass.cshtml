@@ -1,0 +1,37 @@
+﻿@model BusinessObject.Data.Teacher_Class
+
+@{
+    ViewData["Title"] = "AddTeacherClass";
+}
+@{
+    Layout = "_LayoutStaff";
+}
+
+
+<h1>AddTeacherClass</h1>
+
+<h4>Teacher_Class</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddTeacherClass">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Class_Role_id" class="control-label"></label>
+                <select asp-for="Class_Role_id" class="form-control" asp-items="ViewBag.KhoaHocSVList"></select>
+            </div>
+            <div class="form-group">
+                <label asp-for="Teacher_Course_id" class="control-label"></label>
+                <select asp-for="Teacher_Course_id" class="form-control" asp-items="ViewBag.Teacher_Coures_id"></select>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
