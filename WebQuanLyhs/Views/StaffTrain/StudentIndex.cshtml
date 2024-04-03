@@ -7,12 +7,14 @@
     Layout = "_LayoutStaff";
 }
 
-<h1>StudentIndex</h1>
-
-<p>
-    <a asp-action="AddStudent">Create New</a>
-</p>
-<table class="table">
+<h4 class="fw-bold py-3 mb-4">Student management</h4>
+<div class="clearfix mb-3">
+    <a class="btn btn-success float-end" style="color: white;" asp-action="AddStudent">Create Account</a>
+</div>
+<div class="row">
+    <div class="card">
+        <div class="table-responsive text-nowrap">
+    <table class ="table table-striped" ">
     <thead>
         <tr>
             <th>
@@ -41,10 +43,10 @@
             <th>
                 @Html.DisplayNameFor(model => model.Role)
             </th>
-            <th></th>
+            <th>Action</th>
         </tr>
     </thead>
-    <tbody>
+ <tbody class="table-border-bottom-0">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -74,7 +76,7 @@
                 @Html.DisplayFor(modelItem => item.Role.Role_name)
             </td>
             <td>
-                    <a asp-action="EditStudent" asp-route-id="@item.User_id">Edit</a> |
+                     <a style="color:white" class="btn-sm btn btn btn-warning" asp-action="EditStudent" asp-route-id="@item.User_id">Edit</a> |
                     
                     <a href="#" data-id="@item.User_id" class="btn btn-sm btn-danger btnDelete"> Delete</a>
             </td>
@@ -82,6 +84,9 @@
 }
     </tbody>
 </table>
+</div>
+</div>
+</div>
 @section scripts {
     <script>
 

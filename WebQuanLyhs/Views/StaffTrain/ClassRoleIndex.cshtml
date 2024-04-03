@@ -8,18 +8,20 @@
 }
 
 
-<h1>ClassRoleIndex</h1>
-
-<p>
-    <a asp-action="AddClassRole">Create New</a>
-</p>
-<table class="table">
+<h4 class="fw-bold py-3 mb-4">Class</h4>
+<div class="clearfix mb-3">
+    <a class="btn btn-success float-end" style="color: white;" asp-action="AddClassRole">Create New</a>
+</div>
+<div class="row">
+    <div class="card">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-striped">
     <thead>
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
             </th>
-            <th></th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -29,10 +31,13 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
-                <a asp-action="EditClassRole" asp-route-id="@item.Class_Role_id">Edit</a> |
-                <a  asp-action="Delete" asp-route-id="@item.Class_Role_id">Delete</a>
+                <a class="btn btn-sm btn-warning" asp-action="EditClassRole" asp-route-id="@item.Class_Role_id">Edit</a> |
+                <a class="btn btn-sm  btn-danger" asp-action="Delete" asp-route-id="@item.Class_Role_id">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+</div>
+</div>
