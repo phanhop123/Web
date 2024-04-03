@@ -8,12 +8,14 @@
     Layout = "_LayoutStaff";
 }
 
-<h1>CategoryIndex</h1>
-
-<p>
-    <a asp-action="AddCategory">Create New</a>
-</p>
-<table class="table">
+<h4 class="fw-bold py-3 mb-4">Course Catalog management</h4>
+<div class="clearfix mb-3">
+    <a class="btn btn-success float-end" style="color: white;" asp-action="AddCategory">Create New</a>
+</div>
+<div class="row">
+    <div class="card">
+        <div class="table-responsive text-nowrap">
+    <table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -22,7 +24,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Category_description)
             </th>
-            <th></th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -35,13 +37,16 @@
                 @Html.DisplayFor(modelItem => item.Category_description)
             </td>
             <td>
-                <a asp-action="EditCategory" asp-route-id="@item.Category_coures_id">Edit</a> |
+                     <a class="btn btn-sm btn-warning" asp-action="EditCategory" asp-route-id="@item.Category_coures_id">Edit</a> |
                     <a href="#" data-id="@item.Category_coures_id" class="btn btn-sm btn-danger btnDelete"> Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+</div>
+</div>
 @section scripts {
     <script>
 

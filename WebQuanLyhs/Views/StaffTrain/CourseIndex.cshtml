@@ -7,12 +7,14 @@
     Layout = "_LayoutStaff";
 }
 
-<h1>CourseIndex</h1>
-
-<p>
-    <a asp-action="AddCourse">Create New</a>
-</p>
-<table class="table">
+<h4 class="fw-bold py-3 mb-4">Course Catalog management</h4>
+<div class="clearfix mb-3">
+    <a class="btn btn-success float-end" style="color: white;" asp-action="AddCourse">Create New</a>
+</div>
+<div class="row">
+    <div class="card">
+        <div class="table-responsive text-nowrap">
+            <table class="table table-striped">
     <thead>
         <tr>
             <th>
@@ -21,7 +23,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.Category_Course)
             </th>
-            <th></th>
+            <th>Action</th>
         </tr>
     </thead>
     <tbody>
@@ -34,8 +36,8 @@
                 @Html.DisplayFor(modelItem => item.Category_Course.Category_name)
             </td>
             <td>
-                    <a asp-action="EditCourse" asp-route-id="@item.Coures_id">Edit</a> |
-                    <a href="#" data-id="@item.Coures_id" class="btn btn-sm btn-danger btnDelete"> Delete</a>
+                                <a class="btn btn-sm btn-warning" asp-action="EditCourse" asp-route-id="@item.Coures_id">Edit</a> |
+                                <a class="btn btn-sm btn-danger" href="#" data-id="@item.Coures_id" class="btn btn-sm btn-danger btnDelete"> Delete</a>
             </td>
         </tr>
 }
