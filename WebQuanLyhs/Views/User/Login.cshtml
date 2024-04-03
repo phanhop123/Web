@@ -17,7 +17,7 @@
 </head>
 <div class="container-fluid">
 	<div class="row">
-		<div style="display: flex;" class="col-md-6 Login">
+		<div style="display: flex;height:100vh" class="col-md-6 Login">
 			<!-- Phần form đăng nhập -->
 			<div class="login-form">
 				<h1 class="header-area" style="font-weight: 650; margin-bottom:20px">Log in to your account</h1>
@@ -27,14 +27,14 @@
 					<div class="mb-3">
 						<div class="form-item w-100">
 							<label asp-for="@Model.Email" class="form-label ">User:</label>
-							<input asp-for="@Model.Email" class="form-control username" type="text" placeholder="Enter your email or username" required>
+							<input asp-for="@Model.Email" class="form-control username" type="text" placeholder="Enter your email or username" >
 							<span asp-validation-for="@Model.Email" class="text-danger"></span>
 						</div>
 					</div>
 					<div class="mb-3">
 						<div class="form-item w-100">
 							<label asp-for="@Model.Password" class="form-label">Password:</label>
-							<input asp-for="@Model.Password" class="form-control password" type="password" placeholder="Enter your password" required>
+							<input asp-for="@Model.Password" class="form-control password" type="password" placeholder="Enter your password" >
 							<span asp-validation-for="@Model.Password" class="text-danger"></span>
 						</div>
 					</div>
@@ -45,11 +45,15 @@
 				</form>
 			</div>
 		</div>
-		<div style="text-align:center" class="background-left Login">
+		<div class="col-md-6 Login">
+			<div style="height: 100vh;display:flex;align-items:center;justify-content:center; background-color: var(--cam);">
+		<div style="text-align:center;" class="background-left ">
 			<!-- Phần background màu cam -->
-			<h2  style="padding-bottom:30px" class="background-content">Academic Portal </h2>
+			<h2  style="padding-bottom:40px" class="background-content">Academic Portal </h2>
 			<div class="circle">
-				<img class="logoimg img-thumbnai" src="~/Hinh/Logo/logo-removebg-preview.png" alt="ảnh logo">
+					<img style="max-height: 50%;max-width: 50%;    transform: translate(0%, 100%);" class="logoimg img-thumbnai" src="~/Hinh/Logo/logo-removebg-preview.png" alt="ảnh logo">
+			</div>
+		</div>
 			</div>
 		</div>
 	</div>
