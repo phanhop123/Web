@@ -2,6 +2,7 @@
 using BusinessObject.Context;
 using BusinessObject.Data;
 using BusinessObject.Viewmodel;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -9,6 +10,7 @@ using Microsoft.Extensions.Hosting;
 
 namespace WebQuanLyhs.Controllers
 {
+
     public class AdminController : Controller
     {
         private readonly ConnectDB db;
@@ -19,6 +21,7 @@ namespace WebQuanLyhs.Controllers
             db = context;
             _mapper = mapper;
         }
+
         public IActionResult Index()
         {
             var usersWithRoles = db.Users.Include(u => u.Role).ToList();
@@ -26,7 +29,6 @@ namespace WebQuanLyhs.Controllers
             
             return View(admin);
         }
-
         public ActionResult AddAccount()
         {
             var phanLoaiSVList = db.Roles.ToList();

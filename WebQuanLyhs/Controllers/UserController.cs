@@ -87,9 +87,10 @@ namespace WebQuanLyhs.Controllers
             }
 				return View();
 		}
-        public async Task<IActionResult> DangXuat()
+        public IActionResult DangXuat()
         {
-            await HttpContext.SignOutAsync();
+            HttpContext.SignOutAsync();
+            HttpContext.Session.Clear(); // Clear the session
             return Redirect("/");
         }
 
