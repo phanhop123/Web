@@ -42,17 +42,13 @@ namespace WebQuanLyhs.Controllers
 		{
             ViewBag.ReturnUrl = ReturnUrl;
             var user = db.Users.SingleOrDefault(kh => kh.Email == model.Email);
-			var password = db.Users.SingleOrDefault(kh => kh.Password == model.Password);
 
 
 			if (user == null)
 			{
 				ModelState.AddModelError("Error ", "Account  is incorrect");
 			}
-			else if (password == null)
-			{
-				ModelState.AddModelError("Error ", "Password is incorrect");
-			}
+			
 			else
 			{
 				if (user.Password != model.Password)
