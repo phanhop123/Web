@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj": {}
+    "D:\\New folder (9)\\BusinessObject\\BusinessObject.csproj": {}
   },
   "projects": {
-    "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\New folder (9)\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\New folder (9)\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj",
+        "projectPath": "D:\\New folder (9)\\BusinessObject\\BusinessObject.csproj",
         "packagesPath": "C:\\Users\\phanh\\.nuget\\packages\\",
-        "outputPath": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\obj\\",
+        "outputPath": "D:\\New folder (9)\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\phanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
