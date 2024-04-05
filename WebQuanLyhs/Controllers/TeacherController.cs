@@ -137,23 +137,23 @@ namespace WebQuanLyhs.Controllers
             return View();
         }
         [HttpPost]
-        public IActionResult ExerciseEdit(AddExercise model)
+        public IActionResult ExerciseEdit(Exercise model)
         {
-            if (model.File != null)
-            {
-                var exsercise = new Exercise()
-                {
-                    Exercise_name = model.Exercise_name,
-                    Creat_time = DateTime.Now,
-                    File_name = Myunti.UploadHinh(model.File, "Exercise"),
-                    Link_submit_assignments = model.Link_submit_assignments,
-                    Course_id = model.Course_id
-                };
-                db.Exercises.Add(exsercise);
-                db.SaveChanges();
-                return RedirectToAction("Exercise");
-            }
-            else { return View(model); }
+            var exsercise = db.Exercises.FirstOrDefault(e => e.Exercise_id == model.Exercise_id);
+
+            exsercise.Exercise_name = model.Exercise_name;
+            exsercise.Creat_time = DateTime.Now;
+            exsercise.Creat_time = DateTime.Now;
+            exsercise.Creat_time = DateTime.Now;
+
+            db.Entry(exsercise).State = EntityState.Modified;
+            db.SaveChanges();
+
+            int userid = (int)HttpContext.Session.GetInt32("ID");
+
+            return RedirectToAction("Detailcourse", new { id = userid });
+
+
         }
 
     }

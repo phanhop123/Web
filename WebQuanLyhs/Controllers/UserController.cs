@@ -51,7 +51,7 @@ namespace WebQuanLyhs.Controllers
             if(user == null)
             {
                 return View();
-            }
+            }   
                 HttpContext.Session.SetString("Email", user.Email);
                 HttpContext.Session.SetString("Name", user.Fullname);
                 HttpContext.Session.SetInt32("ID", user.User_id);
@@ -89,6 +89,67 @@ namespace WebQuanLyhs.Controllers
             HttpContext.Session.Clear(); // Clear the session
             return Redirect("/");
         }
+        public ActionResult Profile()
+        {
+            // Lấy ID của người dùng từ session
+            int? userId = HttpContext.Session.GetInt32("ID");
+
+            if (userId == null)
+            {
+                // Xử lý khi không có ID trong session
+                return RedirectToAction("Login", "User"); // Chuyển hướng đến trang đăng nhập nếu không có ID
+            }
+
+            // Tìm thông tin người dùng từ ID
+            var user = db.Users.FirstOrDefault(u => u.User_id == userId);
+
+            if (user == null)
+            {
+                // Xử lý khi không tìm thấy thông tin người dùng
+                return NotFound();
+            }
+
+            return View(user);
+        }
+        public ActionResult EditProfile(int id)
+        {
+            var item = db.Users.Find(id);
+            return View(item);
+        }
+        [HttpPost]
+        public IActionResult EditProfile(User model)
+        {
+            // Tìm thông tin người dùng từ cơ sở dữ liệu
+            var user = db.Users.FirstOrDefault(u => u.User_id == model.User_id);
+
+            if (user == null)
+            {
+                // Xử lý khi không tìm thấy thông tin người dùng
+                return NotFound();
+            }
+
+            user.User_id = model.User_id;
+            user.Password = model.Password;
+            user.Phone = model.Phone;
+            user.Fullname = model.Fullname;
+            user.Detail = model.Detail;
+            user.Sex_name = model.Sex_name;
+            user.CCCD = model.CCCD;
+
+            // Cập nhật thông tin của người dùng
+            // Cập nhật các trường thông tin khác nếu cần
+
+            // Cập nhật role của người dùng
+
+            db.Entry(user).State = EntityState.Modified;
+
+            db.SaveChanges();
+
+            // Chuyển hướng đến trang Profile
+            return RedirectToAction("Profile");
+        }
+
 
     }
 }
+

@@ -26,6 +26,11 @@ namespace WebQuanLyhs.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
+            int? roleId = HttpContext.Session.GetInt32("Role");
+            if (roleId == null || roleId != 4)
+            {
+                return Redirect("/User/Login");
+            }
             try
             {
                 int? id = HttpContext.Session.GetInt32("ID");
@@ -52,6 +57,11 @@ namespace WebQuanLyhs.Controllers
 
         public ActionResult Detailcourse(int id)
         {
+            int? roleId = HttpContext.Session.GetInt32("Role");
+            if (roleId == null || roleId != 4)
+            {
+                return Redirect("/User/Login");
+            }
             DetailCourse user = null;
             try
             {
@@ -95,43 +105,33 @@ namespace WebQuanLyhs.Controllers
             return View(user);
         }
         [HttpGet]
-        public IActionResult AddBt( )
+        public IActionResult AddBt()
         {
-
+            int? roleId = HttpContext.Session.GetInt32("Role");
+            if (roleId == null || roleId != 4)
+            {
+                return Redirect("/User/Login");
+            }
             return View();
         }
         [HttpPost]
-        public IActionResult AddBt(Exercise model, IFormFile file)
+        public IActionResult AddBt(AddBt model, int? id)
         {
-            try
+            var exsercise = db.Exercises.FirstOrDefault(e => e.Exercise_id == id);
+            if (exsercise != null)
             {
-                var exercise = db.Exercises.FirstOrDefault(e => e.Exercise_id == model.Exercise_id);
-                if (exercise != null)
-                {
-                    exercise.Link_submit_assignments = Myunti.UploadHinh(file, "Filenopbt");
-                    exercise.Creat_time = DateTime.Now;
-
-                    db.Exercises.Update(exercise);
-                    db.SaveChanges();
-
-                    return RedirectToAction("Detailcourse");
-                }
-                else
-                {
-                    // Xử lý trường hợp không tìm thấy bản ghi để cập nhật
-                    // Ví dụ: Trả về một trang thông báo lỗi
-                    return View("NotFound");
-                }
+                exsercise.Creat_time = DateTime.Now;
+                exsercise.Link_submit_assignments = Myunti.UploadHinh(model.Link_submit_assignments, "Filenopbt");
+                db.Entry(exsercise).State = EntityState.Modified;
+                db.SaveChanges();
             }
-            catch (Exception ex)
-            {
-                // Xử lý ngoại lệ
-                // Ví dụ: Trả về một trang thông báo lỗi
-                return View("Error");
-            }
+            int userid = (int)HttpContext.Session.GetInt32("ID");
+
+            return RedirectToAction("Detailcourse", new { id = userid });
+
+
+
         }
-
-
 
 
 

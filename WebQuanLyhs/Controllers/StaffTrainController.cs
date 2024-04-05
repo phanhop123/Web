@@ -78,7 +78,7 @@ namespace WebQuanLyhs.Controllers
 
                 db.SaveChanges();
 
-                return RedirectToAction("TeacherCourseIndex");
+                return RedirectToAction("TeacherIndex");
             }
             return View(user);
 
@@ -94,6 +94,7 @@ namespace WebQuanLyhs.Controllers
 
         public IActionResult EditTeacher(User model)
         {
+            model.Role_id = 3;
             db.Users.Update(model);
             db.Update(model);
 
@@ -162,6 +163,8 @@ namespace WebQuanLyhs.Controllers
                 {
                     Student_id = users.User_id,
                     Major = user.Major,
+                    Fullname = user.Fullname,
+
 
                     // Gán các thuộc tính của UserDetail tương ứng từ model
                 };
@@ -170,7 +173,7 @@ namespace WebQuanLyhs.Controllers
 
                 db.SaveChanges();
 
-                return RedirectToAction("StudentCourseIndex");
+                return RedirectToAction("StudentIndex");
             }
             return View(user);
         }
@@ -187,11 +190,15 @@ namespace WebQuanLyhs.Controllers
 
         public IActionResult EditStudent(User model)
         {
-            db.Users.Attach(model);
+            model.Role_id = 4;
+            db.Users.Update(model);
             db.Update(model);
 
             db.SaveChanges();
             return RedirectToAction("StudentIndex");
+
+ 
+
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
