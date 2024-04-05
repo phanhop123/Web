@@ -81,7 +81,7 @@
                         <span class="app-brand-text demo menu-text fw-bolder ms-2">Sneat</span>
                     </a>
 
-                    <a href="javascript:void(0);" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
+                    <a href="javascript:void(0);" onclick="Dropd()" class="layout-menu-toggle menu-link text-large ms-auto d-block d-xl-none">
                         <i class="bx bx-chevron-left bx-sm align-middle"></i>
                     </a>
                 </div>
@@ -108,7 +108,7 @@
                             <div data-i18n="course">Course management</div>
                         </a>
                     </li>
-
+                    
                 </ul>
             </aside>
 
@@ -116,7 +116,7 @@
 
                 <nav class="layout-navbar container-xxl navbar navbar-expand-xl navbar-detached align-items-center bg-navbar-theme" id="layout-navbar">
                     <div class="layout-menu-toggle navbar-nav align-items-xl-center me-3 me-xl-0 d-xl-none">
-                        <a class="nav-item nav-link px-0 me-xl-4" href="javascript:void(0)">
+                        <a class="nav-item nav-link px-0 me-xl-4" onclick="Dropd()" href="javascript:void(0)">
                             <i class="bx bx-menu bx-sm"></i>
                         </a>
                     </div>
@@ -230,7 +230,16 @@
                 }
             }
     </script>
-  
+    <script>
+        function Dropd() {
+            var dropdown = document.querySelector('.layout-menu-fixed');
+            if (dropdown.classList.contains('layout-menu-expanded')) {
+                dropdown.classList.remove('layout-menu-expanded');
+                } else {
+                dropdown.classList.add('layout-menu-expanded');
+                }
+            }
+    </script>
     <script src=" ~/assets/vendor/libs/jquery/jquery.js"></script>
     <script src=" ~/assets/vendor/libs/popper/popper.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.min.js"></script>

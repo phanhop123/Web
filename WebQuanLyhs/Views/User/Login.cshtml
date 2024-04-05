@@ -24,6 +24,7 @@
                 <h1 class="header-area" style="font-weight: 650; margin-bottom:20px">Log in to your account</h1>
                 <p class="lead" style="margin:15px;color: rgba(127, 127, 127, 0.807);">Welcome! Select method to login:</p>
                     <form class="needs-validation" asp-action="Login" asp-route-returnurl="@ViewBag.ReturnUrl" novalidate>
+                        <div class="text-danger result" asp-validation-summary="ModelOnly"></div>
                     <div class=" mb-3">
                         <label asp-for="@Model.Email" class="form-label">Email:</label>
                          <input type="text" class="form-control" id="validationServerEmail" asp-for="@Model.Email" placeholder="Enter your email" required>

@@ -13,12 +13,12 @@ namespace BusinessObject.Viewmodel
         [MaxLength(20)]
         [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Email is malformed")]
 
-        public string Email { get; set; }
+        public string ?Email { get; set; }
 
         [Required(ErrorMessage = "Password is incorrect")]
         [DataType(DataType.Password)]
-        public string Password { get; set; }
-        public string Fullname { get; set; }
+        public string ?Password { get; set; }
+        public string ?Fullname { get; set; }
 
         public int Role_id { get; set; }
 
