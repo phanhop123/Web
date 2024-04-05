@@ -22,11 +22,12 @@
 }
 
 .footer {
+    width: 100%;
     background-color: #F07025;
-    color: white;
 }
 
 .footer p {
-   margin-bottom: 10px;
+    margin-bottom: 10px;
+    color: white;
 }
 

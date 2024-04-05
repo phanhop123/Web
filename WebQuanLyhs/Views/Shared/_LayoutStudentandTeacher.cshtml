@@ -17,9 +17,8 @@
             <div class="container">
                 <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
                     <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
-                        <li><a href="#" class="nav-link px-2 link-dark">Home</a></li>
-                        <li><a href="#" class="nav-link px-2 link-dark">Customers</a></li>
-                        <li><a href="#" class="nav-link px-2 link-dark">Products</a></li>
+                        <li><a asp-action="Index" class="nav-link px-2 link-dark">Home</a></li>
+                        <li><a asp-action="Detailcourse" class="nav-link px-2 link-dark">Detailcourse</a></li>
                     </ul>
 
                     <form class="col-12 col-lg-auto mb-3 mb-lg-0 me-lg-3">
@@ -31,27 +30,36 @@
                             <img src="https://github.com/mdo.png" alt="mdo" width="32" height="32" class="rounded-circle">
                         </a>
                         <ul class="dropdown-menu text-small" aria-labelledby="dropdownUser" id="dropdownMenu">
-                            <li><a class="dropdown-item" href="#">Profile</a></li>
-                            <li><a class="dropdown-item" href="#">Settings</a></li>
-                            <li>
+                            <li><a class="dropdown-item" asp-controller="User" asp-action="Profile">Profile</a></li>
+                            
+                            <li> 
                                 <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="#">Sign out</a></li>
+                            </li>     
+                            <li><a asp-controller="User" asp-action="DangXuat" class="dropdown-item">Logout</a></li>
                         </ul>
                     </div>
                 </div>
             </div>
         </header>
+        <div class="container content">
+            @RenderSection("Sidebar", required: false)
+            <div class="row justify-content-around">
+                <div class="col-4">
+                    @RenderBody()
+                </div>
+              
+            </div>
+        </div>
 
-        <!-- Your content goes here -->
-        @RenderBody()
+        <div class="container footer">
+            <footer class="py-5 my-4 ">
+                <p class="text-center ">&copy; FPT Polytechnic International</p>
+                <p class="text-center ">Contact: Phone number goes here</p>
+                <p class="text-center">Address: Address goes here</p>
 
-        <footer class="footer py-3 text-center align-bottom">
-            <p>&copy; FPT Polytechnic International</p>
-            <p>Contact: Phone number goes here</p>
-            <p>Address: Address goes here</p>
-        </footer>
-    </div>
+            </footer>
+        </div>
+        </div>
     <script>
         function toggleDropdown() {
             var dropdownMenu = document.getElementById("dropdownMenu");

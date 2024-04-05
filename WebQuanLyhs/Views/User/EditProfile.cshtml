@@ -1,42 +1,28 @@
 ﻿@model BusinessObject.Data.User
 
-@{
-    ViewData["Title"] = "EditStudent";
-}
-@{
-    Layout = "_LayoutStaff";
-}
-
-
-<h1>EditStudent</h1>
-
 <h4>User</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="EditStudent">
+        <form asp-action="EditProfile">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="User_id" />
-            <div class="form-group">
-                <label asp-for="Email" class="control-label"></label>
-                <input asp-for="Email" class="form-control" />
-                <span asp-validation-for="Email" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Password" class="control-label"></label>
-                <input asp-for="Password" class="form-control" />
-                <span asp-validation-for="Password" class="text-danger"></span>
-            </div> 
             <div class="form-group">
                 <label asp-for="Fullname" class="control-label"></label>
                 <input asp-for="Fullname" class="form-control" />
                 <span asp-validation-for="Fullname" class="text-danger"></span>
             </div>
             <div class="form-group">
+                <label asp-for="Password" class="control-label"></label>
+                <input asp-for="Password" class="form-control" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="form-group">
                 <label asp-for="Phone" class="control-label"></label>
                 <input asp-for="Phone" class="form-control" />
                 <span asp-validation-for="Phone" class="text-danger"></span>
             </div>
+           
             <div class="form-group">
                 <label asp-for="Detail" class="control-label"></label>
                 <input asp-for="Detail" class="form-control" />
@@ -61,9 +47,6 @@
 </div>
 
 <div>
-    <a asp-action="StudentIndex">Back to List</a>
+    <a asp-action="Index">Back to List</a>
 </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}

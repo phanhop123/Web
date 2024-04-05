@@ -1,91 +1,92 @@
 ﻿@model IEnumerable<BusinessObject.Data.User>
 
 @{
-    ViewData["Title"] = "StudentIndex";
+    ViewData["Title"] = "Index";
 }
 @{
     Layout = "_LayoutStaff";
 }
 
-<h4 class="fw-bold py-3 mb-4">Student management</h4>
+<h4 class="fw-bold py-3 mb-4">Teacher management</h4>
 <div class="clearfix mb-3">
     <a class="btn btn-success float-end" style="color: white;" asp-action="AddStudent">Create Account</a>
 </div>
 <div class="row">
     <div class="card">
         <div class="table-responsive text-nowrap">
-    <table class ="table table-striped" ">
-    <thead>
-        <tr>
-            <th>
-                @Html.DisplayNameFor(model => model.Email)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Password)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Phone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Fullname)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Detail)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.Sex_name)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.CCCD)
-            </th>
-         
-         
-            <th>
-                @Html.DisplayNameFor(model => model.Role)
-            </th>
-            <th>Action</th>
-        </tr>
-    </thead>
- <tbody class="table-border-bottom-0">
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Email)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Password)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Fullname)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Detail)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Sex_name)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CCCD)
-            </td>
-           
-           
-            <td>
-                @Html.DisplayFor(modelItem => item.Role.Role_name)
-            </td>
-            <td>
-                     <a style="color:white" class="btn-sm btn btn btn-warning" asp-action="EditStudent" asp-route-id="@item.User_id">Edit</a> |
-                    
-                    <a href="#" data-id="@item.User_id" class="btn btn-sm btn-danger btnDelete"> Delete</a>
-            </td>
-        </tr>
-}
-    </tbody>
-</table>
-</div>
-</div>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Email)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Password)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Phone)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Fullname)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Detail)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.Sex_name)
+                        </th>
+                        <th>
+                            @Html.DisplayNameFor(model => model.CCCD)
+                        </th>
+
+
+                        <th>
+                            @Html.DisplayNameFor(model => model.Role)
+                        </th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody class="table-border-bottom-0">
+                    @foreach (var item in Model)
+                    {
+                        <tr>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Email)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Password)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Phone)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Fullname)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Detail)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Sex_name)
+                            </td>
+                            <td>
+                                @Html.DisplayFor(modelItem => item.CCCD)
+                            </td>
+
+
+                            <td>
+                                @Html.DisplayFor(modelItem => item.Role.Role_name)
+                            </td>
+                            <td>
+                                <a asp-action="EditStudent" class="btn-sm btn btn btn-warning" asp-route-id="@item.User_id">Edit</a> |
+
+                                <a href="#" data-id="@item.User_id" class="btn btn-sm btn-danger btnDelete"> Delete</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
 </div>
 @section scripts {
     <script>

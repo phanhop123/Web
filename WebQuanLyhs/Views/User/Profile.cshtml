@@ -1,0 +1,25 @@
+﻿@model BusinessObject.Data.User 
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Profile</title>
+</head>
+<body>
+    <h1>User Profile</h1>
+    <div>
+        <p><strong>Full Name:</strong> @Model.Fullname</p>
+        <p><strong>Password:</strong> @Model.Password</p>
+        <p><strong>Phone:</strong> @Model.Phone</p>
+        <p><strong>Detail:</strong> @Model.Detail</p>
+        <p><strong>Gender:</strong> @Model.Sex_name</p>
+        <p><strong>CCCD:</strong> @Model.CCCD</p>
+        <!-- Thêm các trường thông tin khác của người dùng nếu cần -->
+    </div>
+    <a asp-action="EditProfile" asp-route-id="@Model.User_id" > Edit </a>
+    <div>
+        <a asp-action="Index">Back to List</a>
+    </div>
+
+</body>
+</html>
