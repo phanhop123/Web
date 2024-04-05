@@ -14,7 +14,7 @@ namespace WebQuanLyhs.Controllers
 {
 	public class UserController : Controller
 	{
-        public static UserController instance;
+        public static UserController ?instance;
         public static readonly object instanceLock = new object();
         public static UserController Instance
         {
@@ -41,18 +41,21 @@ namespace WebQuanLyhs.Controllers
 		public async Task<IActionResult>Login(UserLogin model, string? ReturnUrl)
 		{
             ViewBag.ReturnUrl = ReturnUrl;
-            var user = db.Users.SingleOrDefault(kh => kh.Email == model.Email);
-
-            if (user == null || user.Password != model.Password)
+            var user = db.Users.SingleOrDefault(kh => kh.Email == model.Email && kh.Password == model.Password);
+            
+            if (user?.Email != model.Email || user?.Password != model.Password)
             {
                 ModelState.AddModelError("", "Invalid email or password.");
                 return View();
             }
-
-                    HttpContext.Session.SetString("Email", user.Email);
-                    HttpContext.Session.SetString("Name", user.Fullname);
-                    HttpContext.Session.SetInt32("ID", user.User_id);
-                    HttpContext.Session.SetInt32("Role", user.Role_id);
+            if(user == null)
+            {
+                return View();
+            }
+                HttpContext.Session.SetString("Email", user.Email);
+                HttpContext.Session.SetString("Name", user.Fullname);
+                HttpContext.Session.SetInt32("ID", user.User_id);
+                HttpContext.Session.SetInt32("Role", user.Role_id);
 
             if (user.Role_id == 1)
             {
@@ -79,6 +82,7 @@ namespace WebQuanLyhs.Controllers
 
 
         }
+       
         public IActionResult DangXuat()
         {
             HttpContext.SignOutAsync();

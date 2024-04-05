@@ -9,7 +9,7 @@ namespace BusinessObject.Viewmodel
 {
     public class UserLogin
     {
-        [Required(ErrorMessage = "Account  is incorrect.")]
+        [Required(ErrorMessage = "Account is incorrect.")]
         [MaxLength(20)]
         [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Email is malformed")]
 
