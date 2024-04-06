@@ -10,12 +10,12 @@ namespace BusinessObject.Viewmodel
     public class UserLogin
     {
         [Required(ErrorMessage = "Account is incorrect.")]
-        [MaxLength(20)]
+       
         [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$", ErrorMessage = "Email is malformed")]
 
         public string ?Email { get; set; }
 
-        [Required(ErrorMessage = "Password is incorrect")]
+        [Required(ErrorMessage = "Account is incorrect")]
         [DataType(DataType.Password)]
         public string ?Password { get; set; }
         public string ?Fullname { get; set; }

@@ -14,6 +14,8 @@
         <p><strong>Detail:</strong> @Model.Detail</p>
         <p><strong>Gender:</strong> @Model.Sex_name</p>
         <p><strong>CCCD:</strong> @Model.CCCD</p>
+        <p><strong>Avata:</strong>  <img src="~/Hinh/Filenopbt/@Model.Avata" />  </p>
+
         <!-- Thêm các trường thông tin khác của người dùng nếu cần -->
     </div>
     <a asp-action="EditProfile" asp-route-id="@Model.User_id" > Edit </a>

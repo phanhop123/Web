@@ -9,6 +9,8 @@ using OfficeOpenXml;
 using BusinessObject.Viewmodel;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
+using WebQuanLyhs.DTO;
+using WebQuanLyhs.Helps;
 
 namespace WebQuanLyhs.Controllers
 {
@@ -56,6 +58,7 @@ namespace WebQuanLyhs.Controllers
                 HttpContext.Session.SetString("Name", user.Fullname);
                 HttpContext.Session.SetInt32("ID", user.User_id);
                 HttpContext.Session.SetInt32("Role", user.Role_id);
+                HttpContext.Session.SetString("Avata", user.Avata);
 
             if (user.Role_id == 1)
             {
@@ -96,16 +99,13 @@ namespace WebQuanLyhs.Controllers
 
             if (userId == null)
             {
-                // Xử lý khi không có ID trong session
-                return RedirectToAction("Login", "User"); // Chuyển hướng đến trang đăng nhập nếu không có ID
+                return RedirectToAction("Login", "User"); 
             }
 
-            // Tìm thông tin người dùng từ ID
             var user = db.Users.FirstOrDefault(u => u.User_id == userId);
 
             if (user == null)
             {
-                // Xử lý khi không tìm thấy thông tin người dùng
                 return NotFound();
             }
 
@@ -117,14 +117,12 @@ namespace WebQuanLyhs.Controllers
             return View(item);
         }
         [HttpPost]
-        public IActionResult EditProfile(User model)
+        public IActionResult EditProfile(Profile model)
         {
-            // Tìm thông tin người dùng từ cơ sở dữ liệu
             var user = db.Users.FirstOrDefault(u => u.User_id == model.User_id);
 
             if (user == null)
             {
-                // Xử lý khi không tìm thấy thông tin người dùng
                 return NotFound();
             }
 
@@ -134,12 +132,10 @@ namespace WebQuanLyhs.Controllers
             user.Fullname = model.Fullname;
             user.Detail = model.Detail;
             user.Sex_name = model.Sex_name;
+            user.Avata = Myunti.UploadHinh(model.Avata, "Filenopbt");
             user.CCCD = model.CCCD;
 
-            // Cập nhật thông tin của người dùng
-            // Cập nhật các trường thông tin khác nếu cần
-
-            // Cập nhật role của người dùng
+          
 
             db.Entry(user).State = EntityState.Modified;
 
