@@ -17,6 +17,7 @@ namespace BusinessObject.Data
 		public string? Detail { get; set; }
 		public string? Sex_name { get; set; }
 		public string? CCCD { get; set; }
+		public string? Avata {  get; set; }
 
 		[ForeignKey(nameof(Role))]
 		public int Role_id { get; set; }

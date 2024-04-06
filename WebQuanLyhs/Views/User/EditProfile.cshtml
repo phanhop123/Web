@@ -4,7 +4,7 @@
 <hr />
 <div class="row">
     <div class="col-md-4">
-        <form asp-action="EditProfile">
+        <form asp-action="EditProfile" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
             <input type="hidden" asp-for="User_id" />
             <div class="form-group">
@@ -38,7 +38,14 @@
                 <input asp-for="CCCD" class="form-control" />
                 <span asp-validation-for="CCCD" class="text-danger"></span>
             </div>
-           
+            <div class="form-group">
+                <label asp-for="Avata" class="control-label"></label>
+                <input type="file" asp-for="Avata" class="form-control" />
+                <span asp-validation-for="Avata" class="text-danger"></span>
+            </div>
+            
+
+              
             <div class="form-group">
                 <input type="submit" value="Save" class="btn btn-primary" />
             </div>
