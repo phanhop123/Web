@@ -28,24 +28,14 @@ namespace WebQuanLyhs.Controllers
 
         public IActionResult TeacherIndex()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var usersWithRoles = db.Users.Include(u => u.Role).ToList();
+            var usersWithRoles = db.Users.Include(u => u.Role).ToList();
             var admin = db.Users.Where(u => u.Role_id == 3).ToList();
             return View(admin);
         }
 
         public ActionResult AddAccount()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var course = db.Courses.ToList();
+            var course = db.Courses.ToList();
             ViewBag.KhoaHocSVList = new SelectList(course, "Coures_id", "Coures_name");
 
 
@@ -95,12 +85,8 @@ namespace WebQuanLyhs.Controllers
         }
         public IActionResult EditTeacher(int id)
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var item = db.Users.Find(id);
+
+            var item = db.Users.Find(id);
             return View(item);
         }
         [HttpPost]
@@ -130,28 +116,20 @@ namespace WebQuanLyhs.Controllers
             }
             return Json(new { success = false });
         }
+
+
         #endregion
         #region Student
         public IActionResult StudentIndex()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var usersWithRoles = db.Users.Include(u => u.Role).ToList();
+            var usersWithRoles = db.Users.Include(u => u.Role).ToList();
             var admin = db.Users.Where(u => u.Role_id == 4).ToList();
             return View(admin);
         }
 
         public ActionResult AddStudent()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var phanLoaiSVList = db.Roles.ToList();
+            var phanLoaiSVList = db.Roles.ToList();
             var phanLoaiSVListFiltered = phanLoaiSVList.Where(item => item.Role_id == 4).ToList();
             ViewBag.PhanLoaiSVList = new SelectList(phanLoaiSVListFiltered, "Role_id", "Role_name");
 
@@ -201,12 +179,7 @@ namespace WebQuanLyhs.Controllers
         }
         public IActionResult EditStudent(int id)
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var phanLoaiSVList = db.Roles.ToList();
+            var phanLoaiSVList = db.Roles.ToList();
             var phanLoaiSVListFiltered = phanLoaiSVList.Where(item => item.Role_id == 4).ToList();
             ViewBag.PhanLoaiSVList = new SelectList(phanLoaiSVListFiltered, "Role_id", "Role_name");
             var item = db.Users.Find(id);
@@ -223,6 +196,9 @@ namespace WebQuanLyhs.Controllers
 
             db.SaveChanges();
             return RedirectToAction("StudentIndex");
+
+ 
+
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -244,22 +220,13 @@ namespace WebQuanLyhs.Controllers
         #region Category_Course
         public IActionResult CategoryIndex()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var category = db.Category_Courses.ToList();
+            var category = db.Category_Courses.ToList();
             return View(category);
         }
         public ActionResult AddCategory()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			return View();
+
+            return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -277,12 +244,7 @@ namespace WebQuanLyhs.Controllers
         }
         public IActionResult EditCategory(int id)
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var item = db.Category_Courses.Find(id);
+            var item = db.Category_Courses.Find(id);
             return View(item);
         }
         [HttpPost]
@@ -316,23 +278,14 @@ namespace WebQuanLyhs.Controllers
 
         public IActionResult CourseIndex()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var usersWithRoles = db.Courses.Include(u => u.Category_Course).ToList();
+            var usersWithRoles = db.Courses.Include(u => u.Category_Course).ToList();
             var course = db.Courses.ToList();
             return View(course);
         }
         public ActionResult AddCourse()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var phanLoaiSVList = db.Category_Courses.ToList();
+
+            var phanLoaiSVList = db.Category_Courses.ToList();
             ViewBag.KhoaHocSVList = new SelectList(phanLoaiSVList, "Category_coures_id", "Category_name");
             return View();
         }
@@ -352,12 +305,7 @@ namespace WebQuanLyhs.Controllers
         }
         public IActionResult EditCourse(int id)
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var phanLoaiSVList = db.Category_Courses.ToList();
+            var phanLoaiSVList = db.Category_Courses.ToList();
             ViewBag.KhoaHocSVList = new SelectList(phanLoaiSVList, "Category_coures_id", "Category_name");
             var item = db.Courses.Find(id);
             return View(item);
@@ -394,22 +342,13 @@ namespace WebQuanLyhs.Controllers
 
         public IActionResult ClassRoleIndex()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var classRole = db.Class_Roles;
+
+            var classRole = db.Class_Roles;
             return View(classRole);
         }
         public ActionResult AddClassRole()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			return View();
+            return View();
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -427,12 +366,8 @@ namespace WebQuanLyhs.Controllers
         }
         public IActionResult EditClassRole(int id)
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var item = db.Class_Roles.Find(id);
+
+            var item = db.Class_Roles.Find(id);
             return View(item);
         }
         [HttpPost]
@@ -466,11 +401,8 @@ namespace WebQuanLyhs.Controllers
         #region StudentClass
         public IActionResult StudentClassIndex()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
+
+           
             var studentclass = db.Student_Classes.
                 Include(sc => sc.Class_Role).
                 Include(sc => sc.Student_Course);
@@ -478,12 +410,7 @@ namespace WebQuanLyhs.Controllers
         }
         public ActionResult AddStudentClass()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var sv = db.Class_Roles.ToList();
+            var sv = db.Class_Roles.ToList();
             ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
             var st = db.Student_Courses.ToList();
             ViewBag.Student_Course_id = new SelectList(st, "Student_id", "Fullname");
@@ -504,12 +431,8 @@ namespace WebQuanLyhs.Controllers
 
         }
         public IActionResult EditStudentClass(int id)
-		{ int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var sv = db.Class_Roles.ToList();
+        {
+            var sv = db.Class_Roles.ToList();
             ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
             var st = db.Student_Courses.ToList();
             ViewBag.Student_Course_id = new SelectList(st, "Student_id", "Fullname");
@@ -532,24 +455,16 @@ namespace WebQuanLyhs.Controllers
 
         public IActionResult TeacherClassIndex()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var teacherclass = db.Teacher_Classes.
+
+            
+            var teacherclass = db.Teacher_Classes.
                 Include(sc => sc.Class_Role).
                 Include(sc => sc.Teacher_Course);
             return View(teacherclass);
         }
         public ActionResult AddTeacherClass()
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var sv = db.Class_Roles.ToList();
+            var sv = db.Class_Roles.ToList();
             ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
             var st = db.Teacher_Courses.ToList();
             ViewBag.Teacher_Coures_id = new SelectList(st, "Teacher_Coures_id", "Fullname");
@@ -571,12 +486,7 @@ namespace WebQuanLyhs.Controllers
         }
         public IActionResult EditTeacherClass(int id)
         {
-			int? roleId = HttpContext.Session.GetInt32("Role");
-			if (roleId == null || roleId != 2)
-			{
-				return Redirect("/User/Login");
-			}
-			var sv = db.Class_Roles.ToList();
+            var sv = db.Class_Roles.ToList();
             ViewBag.KhoaHocSVList = new SelectList(sv, "Class_Role_id", "Name");
             var st = db.Teacher_Courses.ToList();
             ViewBag.Teacher_Course_id = new SelectList(st, "Teacher_Coures_id", "Fullname");
