@@ -1,0 +1,634 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Projectcuoiky\\Web\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\controllers\\teachercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\controllers\\studentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\controllers\\stafftraincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\controllers\\stafftraincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\editcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\addcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\courseindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\courseindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\editcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\editcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\addcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\categoryindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\categoryindex.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\user\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\helps\\myunti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\helps\\myunti.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\student\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\student\\addbt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\student\\addbt.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\student\\detailcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\student\\detailcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\teacher\\exerciseadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\teacher\\exerciseadd.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\addaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\addaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\stafftrain\\editcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\stafftrain\\editcategory.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\stafftrain\\addaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\stafftrain\\addaccount.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\wwwroot\\lib\\jquery-validation-unobtrusive\\license.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\wwwroot\\lib\\jquery-validation-unobtrusive\\license.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\dto\\addexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\dto\\addexercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\dto\\addbt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\dto\\addbt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\teacher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\teacher\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\teacher\\exercise.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\teacher\\exercise.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\teacher\\detailcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\teacher\\detailcourse.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|d:\\projectcuoiky\\web\\webquanlyhs\\views\\admin\\editacc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{EBE3863F-9F46-484A-BEE6-7D7214BA818F}|WebQuanLyhs\\WebQuanLyhs.csproj|solutionrelative:webquanlyhs\\views\\admin\\editacc.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{773EA22D-0EB7-4E2F-BC58-03BB0752E9AA}|BusinessObject\\BusinessObject.csproj|d:\\projectcuoiky\\web\\businessobject\\viewmodel\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{773EA22D-0EB7-4E2F-BC58-03BB0752E9AA}|BusinessObject\\BusinessObject.csproj|solutionrelative:businessobject\\viewmodel\\userlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 232,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\appsettings.json",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\appsettings.json",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\appsettings.json",
+              "RelativeToolTip": "WebQuanLyhs\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-04-06T11:18:31.505Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Program.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Program.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Program.cs",
+              "RelativeToolTip": "WebQuanLyhs\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:18:29.529Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EditCourse.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\EditCourse.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\EditCourse.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\EditCourse.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\EditCourse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "AddCourse.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\AddCourse.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\AddCourse.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\AddCourse.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\AddCourse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.662Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CourseIndex.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\CourseIndex.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\CourseIndex.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\CourseIndex.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\CourseIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EditCategory.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\EditCategory.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\EditCategory.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\EditCategory.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\EditCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Controllers\\AdminController.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "WebQuanLyhs\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAKEAAAAAAAAAAADwv7AAAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.681Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "StaffTrainController.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\StaffTrainController.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Controllers\\StaffTrainController.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\StaffTrainController.cs",
+              "RelativeToolTip": "WebQuanLyhs\\Controllers\\StaffTrainController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwNQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.687Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "StudentController.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\StudentController.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Controllers\\StudentController.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\StudentController.cs",
+              "RelativeToolTip": "WebQuanLyhs\\Controllers\\StudentController.cs",
+              "ViewState": "AQIAAGIAAAAAAAAAAAAswIQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TeacherController.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\TeacherController.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Controllers\\TeacherController.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\TeacherController.cs",
+              "RelativeToolTip": "WebQuanLyhs\\Controllers\\TeacherController.cs",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAuwGMAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AddCategory.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\AddCategory.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\AddCategory.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\AddCategory.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\AddCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CategoryIndex.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\CategoryIndex.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\CategoryIndex.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\CategoryIndex.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\CategoryIndex.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.711Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAIIAAAAAAAAAAAD4v4kAAAAKAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.717Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Student\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Student\\Index.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Student\\Index.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Student\\Index.cshtml",
+              "ViewState": "AQIAABUAAAAAAAAAAAAAACIAAABWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Detailcourse.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Student\\Detailcourse.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Student\\Detailcourse.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Student\\Detailcourse.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Student\\Detailcourse.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAACMAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.728Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AddBt.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Student\\AddBt.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Student\\AddBt.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Student\\AddBt.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Student\\AddBt.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.735Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAB4AAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.74Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAB+AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.747Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Myunti.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Helps\\Myunti.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Helps\\Myunti.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Helps\\Myunti.cs",
+              "RelativeToolTip": "WebQuanLyhs\\Helps\\Myunti.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.754Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\User\\Login.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\User\\Login.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\User\\Login.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\User\\Login.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAPAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.764Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Controllers\\UserController.cs",
+              "RelativeToolTip": "WebQuanLyhs\\Controllers\\UserController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAgwCQAAAATAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\_ViewImports.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.781Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\_ViewStart.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.787Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "ExerciseAdd.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\ExerciseAdd.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Teacher\\ExerciseAdd.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\ExerciseAdd.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Teacher\\ExerciseAdd.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "AddAccount.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\StaffTrain\\AddAccount.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\StaffTrain\\AddAccount.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\StaffTrain\\AddAccount.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\StaffTrain\\AddAccount.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAB8AAABFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.8Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "EditCategory.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\StaffTrain\\EditCategory.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\StaffTrain\\EditCategory.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\StaffTrain\\EditCategory.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\StaffTrain\\EditCategory.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.805Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "AddAccount.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\AddAccount.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\AddAccount.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\AddAccount.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\AddAccount.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAACAAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.812Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "LICENSE.txt",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+              "RelativeToolTip": "WebQuanLyhs\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-04-06T11:06:39.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.821Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "site.js",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\wwwroot\\js\\site.js",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "WebQuanLyhs\\wwwroot\\js\\site.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-06T11:06:39.827Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "EditAcc.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\EditAcc.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Admin\\EditAcc.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Admin\\EditAcc.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Admin\\EditAcc.cshtml",
+              "ViewState": "AQIAAAwAAAAAAAAAAAAAABsAAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.833Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserLogin.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\BusinessObject\\Viewmodel\\UserLogin.cs",
+              "RelativeDocumentMoniker": "BusinessObject\\Viewmodel\\UserLogin.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\BusinessObject\\Viewmodel\\UserLogin.cs",
+              "RelativeToolTip": "BusinessObject\\Viewmodel\\UserLogin.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAABQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.838Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "AddExercise.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\DTO\\AddExercise.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\DTO\\AddExercise.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\DTO\\AddExercise.cs",
+              "RelativeToolTip": "WebQuanLyhs\\DTO\\AddExercise.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "AddBt.cs",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\DTO\\AddBt.cs",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\DTO\\AddBt.cs",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\DTO\\AddBt.cs",
+              "RelativeToolTip": "WebQuanLyhs\\DTO\\AddBt.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwAIAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-06T11:06:39.848Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Teacher\\Index.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\Index.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Teacher\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.853Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Detailcourse.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\Detailcourse.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Teacher\\Detailcourse.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\Detailcourse.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Teacher\\Detailcourse.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.859Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "Exercise.cshtml",
+              "DocumentMoniker": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\Exercise.cshtml",
+              "RelativeDocumentMoniker": "WebQuanLyhs\\Views\\Teacher\\Exercise.cshtml",
+              "ToolTip": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\Views\\Teacher\\Exercise.cshtml",
+              "RelativeToolTip": "WebQuanLyhs\\Views\\Teacher\\Exercise.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-06T11:06:39.864Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

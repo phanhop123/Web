@@ -271,3 +271,15 @@ D:\ky 5\lap trinh nang cao\ManangementStudent\WebQuanLyhs\bin\Debug\net7.0\runti
 D:\ky 5\lap trinh nang cao\ManangementStudent\WebQuanLyhs\bin\Debug\net7.0\runtimes\win\lib\net7.0\System.Security.Cryptography.Pkcs.dll
 D:\ky 5\lap trinh nang cao\ManangementStudent\WebQuanLyhs\bin\Debug\net7.0\AutoMapper.dll
 D:\ky 5\lap trinh nang cao\ManangementStudent\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.sourcelink.json
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.csproj.AssemblyReference.cache
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.GeneratedMSBuildEditorConfig.editorconfig
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.AssemblyInfoInputs.cache
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.AssemblyInfo.cs
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.csproj.CoreCompileInputs.cache
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.MvcApplicationPartsAssemblyInfo.cache
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.RazorAssemblyInfo.cache
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.RazorAssemblyInfo.cs
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.sourcelink.json
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.dll
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\refint\WebQuanLyhs.dll
+D:\Projectcuoiky\Web\WebQuanLyhs\obj\Debug\net7.0\WebQuanLyhs.pdb

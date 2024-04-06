@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\WebQuanLyhs\\WebQuanLyhs.csproj": {}
+    "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\WebQuanLyhs.csproj": {}
   },
   "projects": {
-    "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj": {
+    "D:\\Projectcuoiky\\Web\\BusinessObject\\BusinessObject.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj",
+        "projectUniqueName": "D:\\Projectcuoiky\\Web\\BusinessObject\\BusinessObject.csproj",
         "projectName": "BusinessObject",
-        "projectPath": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj",
-        "packagesPath": "C:\\Users\\phanh\\.nuget\\packages\\",
-        "outputPath": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\obj\\",
+        "projectPath": "D:\\Projectcuoiky\\Web\\BusinessObject\\BusinessObject.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projectcuoiky\\Web\\BusinessObject\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\phanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -34,6 +38,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -89,21 +98,25 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\WebQuanLyhs\\WebQuanLyhs.csproj": {
+    "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\WebQuanLyhs.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\WebQuanLyhs\\WebQuanLyhs.csproj",
+        "projectUniqueName": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\WebQuanLyhs.csproj",
         "projectName": "WebQuanLyhs",
-        "projectPath": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\WebQuanLyhs\\WebQuanLyhs.csproj",
-        "packagesPath": "C:\\Users\\phanh\\.nuget\\packages\\",
-        "outputPath": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\WebQuanLyhs\\obj\\",
+        "projectPath": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\WebQuanLyhs.csproj",
+        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
+        "outputPath": "D:\\Projectcuoiky\\Web\\WebQuanLyhs\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\phanh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -117,8 +130,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj": {
-                "projectPath": "D:\\ky 5\\lap trinh nang cao\\ManangementStudent\\BusinessObject\\BusinessObject.csproj"
+              "D:\\Projectcuoiky\\Web\\BusinessObject\\BusinessObject.csproj": {
+                "projectPath": "D:\\Projectcuoiky\\Web\\BusinessObject\\BusinessObject.csproj"
               }
             }
           }
@@ -127,6 +140,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -171,7 +189,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
