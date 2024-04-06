@@ -58,7 +58,11 @@ namespace WebQuanLyhs.Controllers
                 HttpContext.Session.SetString("Name", user.Fullname);
                 HttpContext.Session.SetInt32("ID", user.User_id);
                 HttpContext.Session.SetInt32("Role", user.Role_id);
+            if (user.Avata != null)
+            {
                 HttpContext.Session.SetString("Avata", user.Avata);
+            }
+
 
             if (user.Role_id == 1)
             {
@@ -89,7 +93,7 @@ namespace WebQuanLyhs.Controllers
         public IActionResult DangXuat()
         {
             HttpContext.SignOutAsync();
-            HttpContext.Session.Clear(); // Clear the session
+            HttpContext.Session.Clear(); 
             return Redirect("/");
         }
         public ActionResult Profile()
