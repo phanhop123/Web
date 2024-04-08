@@ -89,8 +89,6 @@
 </div>
 @section scripts {
     <script>
-
-
         $(document).ready(function () {
             $('body').on('click', '.btnDelete', function () {
                 var id = $(this).data("id");
@@ -99,7 +97,7 @@
                 if (conf === true) {
 
                     $.ajax({
-                        url: '/StaffTrain/DeleteTeacher',
+                        url: '/Staff/DeleteTeacher',
                         type: 'POST',
                         data: { id: id },
                         success: function (rs) {
@@ -112,6 +110,6 @@
                 }
             });
         });
-
     </script>
 }
+

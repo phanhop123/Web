@@ -7,13 +7,17 @@
     Layout = "_LayoutStaff";
 }
 
-
-<h1>StudentClassIndex</h1>
-
-<p>
+<h4 class="fw-bold py-3 mb-4">Teacher management</h4>
+<div class="clearfix mb-3">
+    <a class="btn btn-success float-end" style="color: white;" asp-action="AddAccount">Create Account</a>
     <a asp-action="AddStudentClass">Create New</a>
-</p>
-<table class="table">
+
+</div>
+<div class="row">
+    <div class="card">
+        <div class="table-responsive text-nowrap">
+
+    <table class ="table table-striped">
     <thead>
         <tr>
             <th>
@@ -25,7 +29,7 @@
             <th></th>
         </tr>
     </thead>
-    <tbody>
+     <tbody class="table-border-bottom-0">
 @foreach (var item in Model) {
         <tr>
             <td>
@@ -35,11 +39,43 @@
                     @Html.DisplayFor(modelItem => item.Student_Course.Fullname)
                 </td>
             <td>
-                    <a asp-action="EditStudentClass" asp-route-id="@item.Student_Class_id">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.Student_Class_id">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.Student_Class_id">Delete</a>
+                <a asp-action="EditStudentClass" class="btn-sm btn btn btn-warning" asp-route-id="@item.Student_Class_id">Edit</a> |
+
+               <a asp-action="Delete" asp-route-id="@item.Student_Class_id" class="btn btn-sm btn-danger btnDelete">Delete</a>
             </td>
         </tr>
 }
     </tbody>
 </table>
+</div>
+</div>
+</div>
+
+@section scripts {
+    <script>
+
+
+        $(document).ready(function () {
+            $('body').on('click', '.btnDelete', function () {
+                var id = $(this).data("id");
+                var conf = confirm('You Delete Account ?');
+
+                if (conf === true) {
+
+                    $.ajax({
+                        url: '/StaffTrain/DeleteTeacher',
+                        type: 'POST',
+                        data: { id: id },
+                        success: function (rs) {
+                            if (rs.success) {
+                                $('#trow_' + id).remove();
+                                location.reload();
+                            }
+                        }
+                    });
+                }
+            });
+        });
+
+    </script>
+}

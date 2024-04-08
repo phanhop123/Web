@@ -80,6 +80,9 @@
                         </form>
                     </div>
                     <div class=" mx-4">
+
+                        <a class="btn btn-success" asp-action="EditProfile" asp-route-id="@Model.User_id"> Edit </a>
+
                         @if (Model.Role_id == 1)
                         {
                             <a class="btn btn-danger" asp-controller="Admin" asp-action="Index">Back to List</a>
@@ -98,9 +101,7 @@
                         }
 
 
-                        
-                        <a class="btn btn-success" asp-action="EditProfile" asp-route-id="@Model.User_id"> Edit </a>
-
+                       
                     </div>
                 </div>
             </div>

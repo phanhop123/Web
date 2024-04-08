@@ -3,12 +3,14 @@
 @{
     ViewData["Title"] = "Detailcourse";
 }
-
+@{
+    Layout = null;
+}
 <h1>Detailcourse</h1>
 
 <div>
     <h4>Course</h4>
-    <hr />
+   
     <dl class="row">
         <dt class="col-sm-2">
             @Html.DisplayNameFor(model => model.Teacher_Course.Course.Coures_name)
