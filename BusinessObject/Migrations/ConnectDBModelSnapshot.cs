@@ -224,6 +224,9 @@ namespace BusinessObject.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("User_id"));
 
+                    b.Property<string>("Avata")
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("CCCD")
                         .HasColumnType("nvarchar(max)");
 
